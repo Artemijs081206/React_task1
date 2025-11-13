@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Создаем "страничку" - это функция, которая возвращает то, что мы увидим
 function Gallery() {    
   return (
     <>
@@ -23,5 +22,4 @@ function Gallery() {
   );
 }
 
-// Делаем нашу "страничку" доступной для использования в других файлах
 export default Gallery;

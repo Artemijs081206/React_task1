@@ -5,6 +5,9 @@ import Gallery from "./components/gallery";
 import Profile from "./components/profile";
 import Hobbies from "./components/hobbies";
 import Todo from "./components/todo";
+import Counter from "./components/counter";
+import OnChange from "./components/on-change";
+import Uzd3 from "./components/uzd3";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState(null);
@@ -27,6 +30,12 @@ function App() {
         return <Hobbies />;
       case "TodoList":
         return <Todo />;
+      case "Counter":
+        return <Counter />;
+      case "OnChange":
+        return <OnChange />;
+      case "Uzd3":
+        return <Uzd3 />;
       default:
         return <Profile />;
     }
@@ -40,6 +49,9 @@ function App() {
         <button onClick={() => setActiveComponent("Profile")}>Profile</button>
         <button onClick={() => setActiveComponent("Hobbies")}>Hobbies</button>
         <button onClick={() => setActiveComponent("TodoList")}>TodoList</button>
+        <button onClick={() => setActiveComponent("Counter")}>Counter</button>
+        <button onClick={() => setActiveComponent("OnChange")}>OnChange</button>
+        <button onClick={() => setActiveComponent("Uzd3")}>Uzd3</button>
         <button onClick={changeColor}>Change Background Color</button>
       </div>
       <div className="component-container">
