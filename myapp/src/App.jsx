@@ -8,6 +8,8 @@ import Todo from "./components/todo";
 import Counter from "./components/counter";
 import OnChange from "./components/on-change";
 import Uzd3 from "./components/uzd3";
+import PostsList from "./components/posts-list";
+import Dog from "./components/dog-image";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState(null);
@@ -36,6 +38,10 @@ function App() {
         return <OnChange />;
       case "Uzd3":
         return <Uzd3 />;
+      case "PostsList":
+        return <PostsList />;
+      case "Dog":
+        return <Dog />;
       default:
         return <Profile />;
     }
@@ -52,6 +58,8 @@ function App() {
         <button onClick={() => setActiveComponent("Counter")}>Counter</button>
         <button onClick={() => setActiveComponent("OnChange")}>OnChange</button>
         <button onClick={() => setActiveComponent("Uzd3")}>Uzd3</button>
+        <button onClick={() => setActiveComponent("PostsList")}>PostsList</button>
+        <button onClick={() => setActiveComponent("Dog")}>Dog</button>
         <button onClick={changeColor}>Change Background Color</button>
       </div>
       <div className="component-container">

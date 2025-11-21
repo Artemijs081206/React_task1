@@ -7,7 +7,7 @@ function Profile() {
     const [colorIndex, setColorIndex] = useState(-1);
 
     const sayHello = () => {
-        alert('Hello, [Artmijs Stanko]!');
+        alert('Hello, Artmijs Stanko!');
     };
 
     const showTime = () => {
